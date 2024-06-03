@@ -1,8 +1,12 @@
 ---
-company: "Facebook"
-role: "Intern"
+company: "Platform Engineer"
+role: "Freelancer"
 dateStart: "07/01/2019"
-dateEnd: "12/31/2019"
+dateEnd: "Present"
 ---
 
-Iure illo neque tempora, voluptatem est quaerat voluptas praesentium ipsa dolorem dignissimos nulla ratione distinctio quae maiores eligendi nostrum? Quibusdam, debitis voluptatum, lorem ipsum dolor. Sit amet consectetur adipisicing elit.
+As a seasoned DevOps freelancer, I've helped businesses & individuals take their apps to the
+cloud, streamlining provisioning & deployment processes. With expertise in Docker, Kubernetes,
+Terraform, AWS, Azure, GCP, and Python, I'm your go-to partner for cloud migration, automation,
+and more.
+Here <a href="https://www.fiverr.com/aayanmateen470">Fiverr</> is Fiverr!
