@@ -1,7 +1,7 @@
 ---
 company: "Platform Engineer"
 role: "Freelancer"
-dateStart: "07/01/2019"
+dateStart: "07/01/2022"
 dateEnd: "Present"
 ---
 
