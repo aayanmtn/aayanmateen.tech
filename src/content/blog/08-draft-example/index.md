@@ -68,4 +68,4 @@ Embracing this comprehensive approach to OT security not only protects critical 
 
 ---
 
-Feel free to reach out to us at Digital Sierra for more insights on enhancing your OT security practices with DevOps and ISA/IEC 62443 compliance.
+Feel free to reach out to me for more insights on enhancing your OT security practices with DevOps and ISA/IEC 62443 compliance.
