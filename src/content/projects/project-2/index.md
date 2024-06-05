@@ -2,8 +2,7 @@
 title: "Nector "
 description: "Meren app on server "
 date: "Mar 26 2024"
-demoURL: "https://astro-nano-demo.vercel.app"
-repoURL: "https://github.com/markhorn-dev/astro-nano"
+
 ---
 
 # Necter Server Setup and MERN App Deployment🚀
