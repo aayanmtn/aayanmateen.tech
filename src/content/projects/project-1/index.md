@@ -9,17 +9,7 @@ repoURL: "https://github.com/aayanmtn/java-multi-tier.git"
 
 # **Deploying Multi-TierJAVA Application on AWS | SYOPS**
 
-[https://miro.medium.com/v2/da:true/resize:fill:55:55/0*ifAPO3FHxGYCQqdV](https://miro.medium.com/v2/da:true/resize:fill:55:55/0*ifAPO3FHxGYCQqdV)
 
-[Aayan Mateen](https://medium.com/@aayanmtn470?source=post_page-----7a8ffb3cdf20--------------------------------)
-
-4 min read
-
-·
-
-May 24, 2024
-
-1
 
 AWS Cloud | Nginx EC2 Apache Tomcat RabbitMQ MySQL
 
