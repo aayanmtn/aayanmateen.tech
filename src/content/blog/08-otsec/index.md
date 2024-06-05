@@ -4,6 +4,7 @@ description: "SCADA SECURITY"
 date: "05/06/2024"
 draft: false
 ---
+![images](https://github.com/aayanmtn/aayanmateen.tech/assets/56849865/01dc72ad-d519-4136-abbe-0168a3555b03)
 
 # Enhancing Industrial Security with OT Security, DevOps, and ISA/IEC 62443
 
