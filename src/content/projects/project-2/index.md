@@ -1,79 +1,35 @@
 ---
-title: "Astro Nano"
-description: "Minimal portfolio and blog build with astro and no frameworks."
+title: "Nector "
+description: "Meren app on server "
 date: "Mar 26 2024"
 demoURL: "https://astro-nano-demo.vercel.app"
 repoURL: "https://github.com/markhorn-dev/astro-nano"
 ---
 
-![Astro Nano](/astro-nano.png)
+# Necter Server Setup and MERN App Deployment🚀
 
-Astro Nano is a static, minimalist, lightweight, lightning fast portfolio and blog theme.
+I recently had the opportunity to build a server for a company named Necter. My role involved setting up the Node.js server and configuring Nginx as a forward proxy. Additionally, I deployed a MERN (MongoDB, Express.js, React.js, Node.js) application on the server. Here's a brief overview of the process:
 
-Built with Astro, Tailwind and Typescript, an no frameworks.
+## Node.js Server Setup 
 
-It was designed as an even more minimal theme than my popular theme [Astro Sphere](https://github.com/markhorn-dev/astro-sphere)
+I installed and configured the Node.js server to host the company's web applications and APIs. This involved setting up routes, handling requests, and managing dependencies using npm.
 
-## 🚀 Deploy your own
+## Nginx Configuration
 
-<div class="flex gap-2">
-  <a target="_blank" aria-label="Deploy with Vercel" href="https://vercel.com/new/clone?repository-url=https://github.com/markhorn-dev/astro-nano">
-    <img src="/deploy_vercel.svg" />
-  </a>
-  <a target="_blank" aria-label="Deploy with Netlify" href="https://app.netlify.com/start/deploy?repository=https://github.com/markhorn-dev/astro-nano">
-    <img src="/deploy_netlify.svg" />
-  </a>
-</div>
+Nginx was configured as a forward proxy to handle incoming requests and forward them to the Node.js server. This setup helped improve performance and security by offloading some of the processing tasks to Nginx.
 
-## 📋 Features
+## MERN App Deployment
 
-- ✅ 100/100 Lighthouse performance
-- ✅ Responsive
-- ✅ Accessible
-- ✅ SEO-friendly
-- ✅ Typesafe
-- ✅ Minimal style
-- ✅ Light/Dark Theme
-- ✅ Animated UI
-- ✅ Tailwind styling
-- ✅ Auto generated sitemap
-- ✅ Auto generated RSS Feed
-- ✅ Markdown support
-- ✅ MDX Support (components in your markdown)
+I deployed a MERN application on the server, which included:
 
-## 💯 Lighthouse score
-![Astro Nano Lighthouse Score](/lighthouse.png)
+- **MongoDB**: A NoSQL database used by the application to store data.
+- **Express.js**: A web application framework for Node.js used to build the backend API.
+- **React.js**: A frontend library used to build the user interface of the application.
+- **Node.js**: A JavaScript runtime used to run the backend server.
 
-## 🕊️ Lightweight
-No frameworks or added bulk
+The MERN application provided a modern and efficient platform for Necter's web applications.
 
-## ⚡︎ Fast
-Rendered in ~40ms on localhost
+Overall, the project was successful, and the server setup, along with the deployment of the MERN application, provided a reliable and efficient platform for Necter's web applications.
 
-## 📄 Configuration
+Feel free to reach out if you have any questions or need further details about this project.
 
-The blog posts on the demo serve as the documentation and configuration.
-
-## 💻 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-Replace npm with your package manager of choice. `npm`, `pnpm`, `yarn`, `bun`, etc
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run dev:network`     | Starts local dev server on local network         |
-| `npm run sync`            | Generates TypeScript types for all Astro modules.|
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run preview:network` | Preview build on local network                   |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-| `npm run lint`            | Run ESLint                                       |
-| `npm run lint:fix`        | Auto-fix ESLint issues                           |
-
-## 🏛️ License
-
-MIT
