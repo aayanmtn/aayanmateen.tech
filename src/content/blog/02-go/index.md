@@ -75,9 +75,8 @@ Go is also prominent in the monitoring and logging space. Prometheus, an open-so
 ## Go in Software Development
 ### Web Development
 Go's standard library includes packages for building web servers and handling HTTP requests, making it a great choice for developing web applications and APIs.
-```
-go
-Copy code
+```go
+
 package main
 
 import (
