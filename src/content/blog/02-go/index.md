@@ -33,7 +33,7 @@ As a compiled language, Go produces fast executables that are comparable to C or
 ### Concurrency
 Go's concurrency model, based on goroutines and channels, makes it straightforward to write programs that can efficiently use multiple cores. Goroutines are lightweight and their cost is minimal compared to traditional threads.
 
-```
+```go
 package main
 
 import (
