@@ -105,8 +105,9 @@ In this example, you are declaring that you want a file with the content "Hello,
 
 ### Key Differences:
 
- Imperative: Focuses on the exact steps to achieve a result.
-Declarative: Focuses on the desired outcome, allowing the system to determine the steps.
+### Imperative: Focuses on the exact steps to achieve a result.
+ 
+### Declarative: Focuses on the desired outcome, allowing the system to determine the steps.
 In Terraform, the declarative approach is preferred because it allows for better management of infrastructure. You define the desired state of your infrastructure, and Terraform handles the details of how to achieve that state. This makes it easier to manage complex infrastructure configurations and ensures consistency across deployments.
 
 ### Certainly! Here are some sample Terraform configurations in Markdown format. These examples will cover a basic setup for provisioning an AWS EC2 instance, including initializing the provider, defining variables, and creating resources.
