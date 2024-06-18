@@ -59,6 +59,8 @@ Initialize: Run terraform init to initialize the working directory.
 Plan: Run terraform plan to see what changes will be made.
 Apply: Run terraform apply to provision the infrastructure.
 Destroy: Run `terraform destroy to clean up the infrastructure when no longer needed.
+
+Certainly! Here are some sample Terraform configurations in Markdown format. These examples will cover a basic setup for provisioning an AWS EC2 instance, including initializing the provider, defining variables, and creating resources.
 # Terraform Sample Code
 
 ## Initialize the AWS Provider
@@ -70,6 +72,10 @@ provider "aws" {
   access_key = "YOUR_AWS_ACCESS_KEY"
   secret_key = "YOUR_AWS_SECRET_KEY"
 }
+```
+### Define Variables
+Next, we define variables for our configuration. This helps in making the configuration reusable and easy to manage.
+```hcl
 variable "instance_type" {
   description = "Type of the EC2 instance"
   default     = "t2.micro"
@@ -79,6 +85,11 @@ variable "ami_id" {
   description = "AMI ID for the EC2 instance"
   default     = "ami-0c55b159cbfafe1f0" # Example AMI ID
 }
+
+```
+### Create a Security Group
+We'll create a security group to allow SSH access to our EC2 instance.
+```hcl
 resource "aws_security_group" "example" {
   name        = "example_sg"
   description = "Allow SSH inbound traffic"
@@ -97,20 +108,35 @@ resource "aws_security_group" "example" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 }
-resource "aws_instance" "example" {
-  ami           = var.ami_id
-  instance_type = var.instance_type
-
-  tags = {
-    Name = "ExampleInstance"
-  }
-
-  security_groups = [aws_security_group.example.name]
-}
+```
+### Output the Instance Details
+Finally, we can output the instance's public IP address to easily access it after provisioning.
+```hcl
 output "instance_public_ip" {
   value = aws_instance.example.public_ip
 }
 ```
+### 1. Initialize Terraform:
+```sh
+terraform init
+
+```
+### 2. Create an Execution Plan: 
+```sh
+terraform plan
+
+```
+### 3. Apply the Configuration: 
+```sh
+terraform apply
+
+```
+### 4. Destroy the Infrastructure:
+```sh
+terraform destroy 
+
+```
+
 ## Conclusion
 Terraform has emerged as a leading tool in the IaC space, offering a powerful, flexible, and consistent way to manage infrastructure. Its ability to work across multiple providers and its user-friendly configuration language make it an invaluable tool for modern DevOps practices. As infrastructure management continues to evolve, tools like Terraform will remain at the forefront, enabling teams to automate and streamline their processes with ease.
 
