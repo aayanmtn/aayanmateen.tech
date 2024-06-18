@@ -5,6 +5,8 @@ description: "About Terraform"
 date: "Jun 20 2024"
 ---
 
+![th](https://github.com/aayanmtn/aayanmateen.tech/assets/56849865/dffa11fe-ba58-4fd4-bee9-523d7e4ef2e6)
+
 ## Introduction
 In today's fast-paced tech world, managing infrastructure efficiently and reliably is crucial. Enter Terraform, a powerful open-source tool that revolutionizes the way we handle infrastructure by using a concept known as Infrastructure as Code (IaC). This blog will delve into Terraform, its history, the concept of IaC, and how it stands apart from configuration management tools. We'll also touch on other IaC tools like Heat, CloudFormation, ARM, and Deployment Manager, before diving deeper into Terraform's features and commands.
 ## History of Terraform
