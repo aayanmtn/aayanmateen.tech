@@ -116,6 +116,60 @@ output "instance_public_ip" {
   value = aws_instance.example.public_ip
 }
 ```
+### Full Configuration Example
+Putting it all together, the full configuration would look like this:
+```hcl
+provider "aws" {
+  region     = "us-west-2"
+  access_key = "YOUR_AWS_ACCESS_KEY"
+  secret_key = "YOUR_AWS_SECRET_KEY"
+}
+
+variable "instance_type" {
+  description = "Type of the EC2 instance"
+  default     = "t2.micro"
+}
+
+variable "ami_id" {
+  description = "AMI ID for the EC2 instance"
+  default     = "ami-0c55b159cbfafe1f0"
+}
+
+resource "aws_security_group" "example" {
+  name        = "example_sg"
+  description = "Allow SSH inbound traffic"
+
+  ingress {
+    from_port   = 22
+    to_port     = 22
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  egress {
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+}
+
+resource "aws_instance" "example" {
+  ami           = var.ami_id
+  instance_type = var.instance_type
+
+  tags = {
+    Name = "ExampleInstance"
+  }
+
+  security_groups = [aws_security_group.example.name]
+}
+
+output "instance_public_ip" {
+  value = aws_instance.example.public_ip
+}
+
+```
 ### 1. Initialize Terraform:
 ```sh
 terraform init
