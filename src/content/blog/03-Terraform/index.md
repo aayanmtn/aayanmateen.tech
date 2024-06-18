@@ -1,5 +1,5 @@
 ---
-title: "TERRAFORM Infrastructure as a Code
+title: "Exploring Terraform: An Introduction to Modern Infrastructure as Code
 "
 description: "About Terraform"
 date: "Jun 20 2024"
