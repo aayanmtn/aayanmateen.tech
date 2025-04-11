@@ -10,7 +10,7 @@ export const SITE: Site = {
 
 export const HOME: Metadata = {
   TITLE: "Home",
-  DESCRIPTION: "Aayan Mateen is a Platform Engineer.",
+  DESCRIPTION: "Aayan Mateen is a DevOps SysOPs Consultant from Leh,Ladakh.",
 };
 
 export const BLOG: Metadata = {
